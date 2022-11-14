@@ -9,7 +9,7 @@ export const List = styled.ul`
   padding-top: ${p => p.theme.space[5]}px;
   padding-bottom: ${p => p.theme.space[5]}px;
   width: 400px;
-  background-color: ${p => p.theme.colors.light};
+  background: ${p => p.theme.colors.gradient};
   border-radius: ${p => p.theme.radii.normal};
 `;
 

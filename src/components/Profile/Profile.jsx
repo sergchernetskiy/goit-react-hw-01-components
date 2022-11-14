@@ -28,24 +28,24 @@ export const Profile = ({
       boxShadow="standart"
     >
       <Card>
-        <Avatar src={avatar} alt="User avatar" className="avatar" width={150} />
-        <Name>{`${userName}`}</Name>
+        <Avatar src={avatar} alt="User avatar" width={150} />
+        <Name>{userName}</Name>
         <Tag>{`@${tag}`}</Tag>
-        <Location>{`${location}`}</Location>
+        <Location>{location}</Location>
       </Card>
 
       <List>
         <Item>
           <Label>Followers</Label>
-          <Quantity>{`${followers}`}</Quantity>
+          <Quantity>{followers}</Quantity>
         </Item>
         <Item>
           <Label>Views</Label>
-          <Quantity>{`${views}`}</Quantity>
+          <Quantity>{views}</Quantity>
         </Item>
         <Item>
           <Label>Likes</Label>
-          <Quantity>{`${likes}`}</Quantity>
+          <Quantity>{likes}</Quantity>
         </Item>
       </List>
     </Box>
@@ -57,5 +57,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  stats: PropTypes.objectOf(PropTypes.number.isRequired).isRequired,
 };

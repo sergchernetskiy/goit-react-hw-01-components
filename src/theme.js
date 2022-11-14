@@ -19,7 +19,7 @@ export const theme = {
     purple: '#9336a5',
     violet: '#351049',
     pink: '#e100ff',
-    gradient: 'linear-gradient(to-top, #3c1053, #bc4e9c)',
+    gradient: 'linear-gradient(#3c1053, #bc4e9c)',
   },
 
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
